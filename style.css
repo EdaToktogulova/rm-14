@@ -1,0 +1,214 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+.message {
+    border-radius: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+}
+
+.message-out {
+    background-image: linear-gradient(rgb(66, 66, 184), rgba(53, 53, 235, 0.527));
+    color: white;
+    align-self: flex-start;
+    margin-left: 5%;
+    border-radius: 15px 15px 15px 0;
+}
+
+.message-in {
+    background-image: linear-gradient(rgba(128, 128, 128, 0.342), rgba(128, 128, 128, 0.068));
+    align-self: flex-end;
+    margin-right: 5%;
+    border-radius: 15px 15px 0px 15px;
+}
+
+.message-list {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* background-image: linear-gradient( rgba(24, 49, 161, 0.76), rgba(0, 0, 255, 0.432), rgba(85, 151, 90, 0.61),rgba(192, 54, 219, 0.555), rgba(0, 255, 234, 0.541)); */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+
+    box-shadow: 0 0 15px rgba(128, 128, 128, 0.418);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+   
+}
+header a {
+    cursor: not-allowed ;
+}
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 25px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* footer {
+    display: flex;
+    gap: 15px;
+    background-color: rgba(128, 128, 128, 0.288);
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+}
+footer input {
+    flex-grow: 1;
+    border-radius: 25px;
+    padding: 15px;
+} */
+
+/* footer button{
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    cursor: crosshair;
+}
+footer button:last-of-type{
+    background-color: rgba(47, 47, 218, 0.418);
+} */
+
+
+
+
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+.dropdown button{
+    background-color: tomato;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    margin: 0;
+}
+.dropdown button:hover{
+    background-color: rgb(184, 76, 57);
+    cursor: pointer;
+}
+.dropdown ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+.dropdown:hover ul {
+    display: block;
+}
+.dropdown ul a {
+    background-color: tomato;
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+
+}
+.dropdown ul a:hover {
+    background-color: rgb(184, 76, 57);
+}
+
+.dropdown.dropdown-right ul {
+    right: 0;
+}
+
+
+
+button{
+    overflow: hidden;
+
+    cursor: crosshair;
+    border-radius: 15px;
+    border: 5px solid red;
+    display: block;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+
+}
+
+
+button:last-of-type{
+    background-color: rgb(255, 0, 0);
+}
+
+
+
+
+
+
+.important::before {
+    content: "!!!";
+}
+
+.important::after {
+    content: "!!!";
+
+}
+.ul::before {
+    content: "1001";
+}
+.ul::after {
+    content: "1001";
+    
+} .add::before {
+    content: "$";
+
+} .ar::before {
+    content: "###";
+
+}
+.hello::before{
+    content: "HELLO WORLD";
+}
+.hello::after{
+    content: "HELLO WORLD";
+}
+.tm::before {
+    content: "********";
+}
+.tm::after {
+    content: "********";
+}
+
+
+
+[data-tooltip] {
+    position: relative;
+
+}
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    visibility: hidden;
+    position: absolute;
+
+    width: 120px;
+
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+
+    background-color: rgba(20, 69, 228, 0.61);
+    border-radius: 5px;
+    padding: 5px;
+
+}
+[data-tooltip]:hover::after {
+    visibility: visible;
+}

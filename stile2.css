@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.text-justify {
+    text-align: justify;
+}
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.align-left {
+    float: left;
+}
+.align-right {
+    float: right;
+}
+
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+.navbar a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 15px 20px 10px;
+    border-bottom: 5px solid transparent;
+}
+.navbar a:hover {
+    background-color: white;
+    border-color: black;
+    box-shadow: 0 0 15px rgba(128, 128, 128, 0.849);
+}
+.navbar.navbar-fixed {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.navbar.navbar-red {
+    background-color: red;
+}
+.navbar.navbar-red a {
+    color: white;
+}
+.navbar.navbar-red a:hover{
+    border-color: white;
+}

@@ -55,7 +55,7 @@ header h1 {
     margin: 0;
 }
 
-/* footer {
+footer {
     display: flex;
     gap: 15px;
     background-color: rgba(128, 128, 128, 0.288);
@@ -69,9 +69,9 @@ footer input {
     flex-grow: 1;
     border-radius: 25px;
     padding: 15px;
-} */
+} 
 
-/* footer button{
+footer button{
     padding: 15px;
     border-radius: 25px;
     border: none;
@@ -79,7 +79,7 @@ footer input {
 }
 footer button:last-of-type{
     background-color: rgba(47, 47, 218, 0.418);
-} */
+}
 
 
 
@@ -156,23 +156,20 @@ button:last-of-type{
 .important::before {
     content: "!!!";
 }
-
 .important::after {
     content: "!!!";
-
 }
 .ul::before {
     content: "1001";
 }
 .ul::after {
     content: "1001";
-    
-} .add::before {
+}
+.add::before {
     content: "$";
-
-} .ar::before {
+}
+.ar::before {
     content: "###";
-
 }
 .hello::before{
     content: "HELLO WORLD";
@@ -186,12 +183,8 @@ button:last-of-type{
 .tm::after {
     content: "********";
 }
-
-
-
 [data-tooltip] {
     position: relative;
-
 }
 [data-tooltip]::after {
     content: attr(data-tooltip);
@@ -211,4 +204,10 @@ button:last-of-type{
 }
 [data-tooltip]:hover::after {
     visibility: visible;
+}
+[data-ul]:hover::after {
+    content: attr(data-ul);
+    color: rgb(49, 69, 250);
+    background-color: rgba(0, 0, 255, 0.507);
+
 }

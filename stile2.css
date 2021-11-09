@@ -51,7 +51,7 @@ body {
     background-color: red;
 }
 .navbar.navbar-red a {
-    color: white;
+    color: lightgray;
 }
 .navbar.navbar-red a:hover{
     border-color: white;

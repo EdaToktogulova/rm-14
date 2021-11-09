@@ -51,7 +51,7 @@ body {
     background-color: red;
 }
 .navbar.navbar-red a {
-    color: rgb(182, 176, 176);
+    color: white;
 }
 .navbar.navbar-red a:hover{
     border-color: white;

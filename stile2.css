@@ -54,5 +54,5 @@ body {
     color: black;
 }
 .navbar.navbar-red a:hover{
-    border-color: white;
+    border-color: rgba(255, 255, 255, 0.76);
 }

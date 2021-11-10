@@ -6,6 +6,7 @@ div{
     width: 70px ;
     height: 70px;
     background-color: tomato;
+    border-radius: 50%;
 
     position: absolute;
     top: 50%;
@@ -17,10 +18,10 @@ div{
     animation: color-shift 5s infinite alternate 3s ease-in-out;
 
     animation-name: color-shift, move-sideways, move-updown;
-    animation-duration: 5s, 2s, 2s;
+    animation-duration: 5s, 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-delay: 2s, 0s, 0s;
+    animation-delay: 2s, 0s;
     animation-timing-function: ease-in-out;
 }
 

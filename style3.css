@@ -44,3 +44,11 @@ div:hover{
         background-color: blue;
     }
 }
+@keyframes move-sideways {
+    0% {
+        left: 25%;
+    }
+    100% {
+        left: 75%;
+    }
+}

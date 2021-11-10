@@ -46,6 +46,9 @@ div:hover{
 }
 @keyframes move-sideways {
     0% {
+        left: 75%;
+    }
+    50% {
         left: 25%;
     }
     100% {

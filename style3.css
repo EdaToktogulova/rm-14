@@ -16,11 +16,11 @@ div{
 
     animation: color-shift 5s infinite alternate 3s ease-in-out;
 
-    animation-name: color-shift, move-sideways;
-    animation-duration: 5s, 2s;
+    animation-name: color-shift, move-sideways, move-updown;
+    animation-duration: 5s, 2s, 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-delay: 3s;
+    animation-delay: 3s, 0s, 0s;
     animation-timing-function: ease-in-out;
 }
 
@@ -32,7 +32,7 @@ div:hover{
         background-color: tomato;
     }
     25% {
-        background-color: white;
+        background-color: rgb(244, 248, 15);
     }
     50%{
         background-color: green;
@@ -53,5 +53,16 @@ div:hover{
     }
     100% {
         left: 75%;
+    }
+}
+@keyframes move-updown {
+    0% {
+        top: 75%;
+    }
+    50% {
+        top: 25%;
+    }
+    100% {
+        top: 75%;
     }
 }

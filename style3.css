@@ -19,6 +19,7 @@ div{
     animation-name: color-shift;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    animation-direction: reverse;
 }
 @keyframes color-shift {
     0% {

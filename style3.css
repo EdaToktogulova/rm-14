@@ -23,6 +23,10 @@ div{
     animation-delay: 3s;
     animation-timing-function: ease-in-out;
 }
+
+div:hover{
+    animation-play-state: paused;
+}
 @keyframes color-shift {
     0% {
         background-color: tomato;

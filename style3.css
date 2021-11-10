@@ -14,12 +14,12 @@ div{
     margin-left: -25px;
     margin-top: -25px;
 
-    animation: color-shift 5s infinite;
+    animation: color-shift 5s infinite alternate;
 
     animation-name: color-shift;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-direction: reverse;
+    animation-direction: alternate;
 }
 @keyframes color-shift {
     0% {

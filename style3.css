@@ -14,14 +14,14 @@ div{
     margin-left: -35px;
     margin-top: -35px;
 
-    animation: color-shift 5s infinite alternate ease-in-out;
+    animation: color-shift 5s infinite alternate 3s ease-in-out;
 
     animation-name: color-shift, move-sideways;
-    animation-duration: 5s;
+    animation-duration: 5s, 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-delay: 3s;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
 }
 
 div:hover{
